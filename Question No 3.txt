@@ -1,0 +1,4 @@
+select dept.DNAME as DEPARTMENT_NAME , count(*) as NUMBER_OF_EMPLOYEE
+inner join 
+dept on emp.DEPTNO=dept.DEPTNO
+group by dept.DNAME;
